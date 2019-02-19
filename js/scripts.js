@@ -343,8 +343,8 @@ $(function() {
   map.setCenter(portlandDowntown);
   map.setZoom(15);
 
-  var stationUrl = "http://biketownpdx.socialbicycles.com/opendata/station_information.json";
-  var bikeUrl = "http://biketownpdx.socialbicycles.com/opendata/station_status.json";
+  var stationUrl = "https://biketownpdx.socialbicycles.com/opendata/station_information.json";
+  var bikeUrl = "https://biketownpdx.socialbicycles.com/opendata/station_status.json";
 
   mapDisplay.initialize("mapid", map.getCenter(), map.getZoom());
   requestObject(stationUrl).then(function(dataObject) {
